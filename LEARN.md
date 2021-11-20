@@ -40,7 +40,7 @@ Every wallet on the Solana blockchain has a unique identifier, called the public
 
 Apart from the public key, you also have something called the private key - which is again a cryptographic string of alpha-numeric characters. Your private key (which you shouldn't share with anyone) along with your public key (wallet address) is used to verify your identity on the Solana Blockchain.
 
-![1_solana_keygen](https://github.com/altsam/create_crypto_with_solana_cli/blob/main/learn_assets/1_solana_keygen.png) 
+![1_solana_keygen](https://github.com/altsam/create_crypto_with_solana_cli/blob/main/learn_assets/1_solana_keygen.png?raw=true) 
 
 To check the balance of your newly created wallet, you can simply type
 ```
