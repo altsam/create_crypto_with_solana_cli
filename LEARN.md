@@ -57,9 +57,12 @@ To check the balance of your newly created wallet, you can simply type
 solana balance
 ```
 
-
 ![2](https://github.com/altsam/create_crypto_with_solana_cli/raw/main/learn_assets/2_solana_pubkey.png)
 
+
+You can also verify this by pasting your public key on the solana explorer - https://explorer.solana.com/?cluster=devnet 
+
+![2](https://github.com/AdityaSh91/create_crypto_with_solana_cli/blob/main/learn_assets/explorer_balance_check.png)
 
 The original Solana blockchain where the actual transactions happen is known as the mainnet. To perform any transaction on the Solana blockchain, you’re charged a transaction fee. These payments happen in a currency called SOL.
 
