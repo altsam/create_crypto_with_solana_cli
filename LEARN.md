@@ -246,4 +246,4 @@ Once the PR gets approved, you’ll be able to view the token image and name on 
 
 ## What’s next?
 
-Now that you know how to create your very own cryptocurrency on Solana, in the upcoming quests we’ll see how to do it in Javascript and by writing our own Rust programs.
+Now that you know how to create your very own cryptocurrency on Solana, in the upcoming quests we’ll see how to do it in Javascript and by writing our own Rust programs. Before you do that, don't forget to claim your NFT reward for succesfully completing this quest from [Layer3](https://alpha.layer3.xyz/task/create-your-personal-cryptocurrency-using-solana-cli)!
