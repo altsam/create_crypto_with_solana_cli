@@ -141,7 +141,7 @@ Congratulations, now you can mint infinite number of tokens for yourself and you
 You might create a lot of tokens, distribute it with your friends, who might further distribute it to more of their friends - which we’ll see in a bit. Let us check how many tokens have I created and are currently being used by people on the blockchain. The circulating supply of a token refers to the total number of tokens that are being used by people for transactions. To view the circulating supply of your token, run the following command.
 
 ```
-spl-token supply <token address>
+spl-token supply <token address> --url https://api.devnet.solana.com
 ```
 
 
@@ -153,7 +153,7 @@ Let’s say you are creating tokens to raise money for your next project. You pl
 Solana provides us the ability to disable our minting authority, and never enable it back. We can do so by running the following command.
 
 ```
-spl-token authorize <token address> mint –disable
+spl-token authorize <token address> mint –-disable --url https://api.devnet.solana.com
 ```
 
 
