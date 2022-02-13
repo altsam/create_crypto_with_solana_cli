@@ -91,7 +91,7 @@ Our token is actually created by a smart contract (program) in the SPL library. 
 We can create a token by running
 
 ```
-spl-token create-token
+spl-token create-token --url https://api.devnet.solana.com/
 ```
 
 
