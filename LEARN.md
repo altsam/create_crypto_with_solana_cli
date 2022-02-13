@@ -100,7 +100,7 @@ spl-token create-token --url https://api.devnet.solana.com/
 
 We have now created our very first token! As mentioned earlier, tokens are created using the SPL smart contracts. These smart contracts have a unique address in the blockchain which is a string of alpha-numeric characters. The address of this smart contract that holds the logic for the token’s behaviour is known as the “token address”. For all the actions that we’ll be performing for our tokens such as minting, burning etc, we’ll be interacting with this smart contract and hence we need to note down the address of this smart contract.
 
-Congratulations on creating your very own cryptocurrency! \( ﾟヮﾟ)/
+Congratulations on creating your very own token! \( ﾟヮﾟ)/
 
 ## Minting new tokens
 
