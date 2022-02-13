@@ -54,7 +54,7 @@ Apart from the public key, you also have something called the private key - whic
 To check the balance of your newly created wallet, you can simply type
 
 ```
-solana balance
+solana balance --url https://api.devnet.solana.com
 ```
 
 ![2](https://github.com/altsam/create_crypto_with_solana_cli/raw/main/learn_assets/2_solana_pubkey.png)
@@ -78,6 +78,11 @@ solana airdrop 1 <public key> --url https://api.devnet.solana.com
 
 ![3](https://github.com/altsam/create_crypto_with_solana_cli/raw/main/learn_assets/3_solana_airdrop.png)
 To check your new balance, run the following command
+
+```
+solana balance --url https://api.devnet.solana.com
+```
+
 ![4](https://github.com/altsam/create_crypto_with_solana_cli/raw/main/learn_assets/4_solana_balance.png)
 
 
@@ -118,6 +123,9 @@ In the above image ‘BghFzN668wXWQQPF924c1C5vpDwXcWo5FCEMzcHT195x’ is an empt
 
 To check the balance of our token i.e. number of tokens that we have in our newly created account, run the following command.
 
+```
+spl-token balance <token address> --url https://api.devnet.solana.com/
+```
 
 ![7](https://github.com/altsam/create_crypto_with_solana_cli/raw/main/learn_assets/7_solana_check_balance.png)
 
@@ -125,7 +133,7 @@ The process of creating new tokens on the blockchain is known as “minting”. 
 To do so, we can use the following command.
 
 ```
-spl-token mint <token address> <number of tokens to be minted>
+spl-token mint <token address> <number of tokens to be minted> --url https://api.devnet.solana.com/
 ```
 
 
@@ -141,7 +149,7 @@ Congratulations, now you can mint infinite number of tokens for yourself and you
 You might create a lot of tokens, distribute it with your friends, who might further distribute it to more of their friends - which we’ll see in a bit. Let us check how many tokens have I created and are currently being used by people on the blockchain. The circulating supply of a token refers to the total number of tokens that are being used by people for transactions. To view the circulating supply of your token, run the following command.
 
 ```
-spl-token supply <token address>
+spl-token supply <token address> --url https://api.devnet.solana.com/
 ```
 
 
@@ -153,7 +161,7 @@ Let’s say you are creating tokens to raise money for your next project. You pl
 Solana provides us the ability to disable our minting authority, and never enable it back. We can do so by running the following command.
 
 ```
-spl-token authorize <token address> mint –disable
+spl-token authorize <token address> mint –disable --url https://api.devnet.solana.com/
 ```
 
 
@@ -169,7 +177,7 @@ We have now renounced our ability to mint new tokens. If we do try to mint new t
 Let’s say we want to “burn” our token, i.e. remove tokens that we own in our account out of circulation, so that they can never be used again. We can do so by running the following command.
 
 ```
-spl-token burn <source token account address> <tokens to be burnt>
+spl-token burn <source token account address> <tokens to be burnt> --url https://api.devnet.solana.com/
 ```
 
 
@@ -204,7 +212,7 @@ Paste the token address over here of the token which you want to create an accou
 Once the token account has been added to Phantom, we can now send the money to this wallet address. To send them our token, run the following command
 
 ```
-spl-token transfer <your token account address> <total amount> <receiver’s wallet address>
+spl-token transfer <token address> <total amount> <receiver’s wallet address> --url https://api.devnet.solana.com/
 ```
 
 We can verify the presence of our newly transferred token by checking Phantom wallet of your friend for a new token. It’ll be listed as an unknown token in the Phantom wallet’s homepage.
